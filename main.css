@@ -1,53 +1,58 @@
 body{
-    font-family: "Arial", "Helvetica", "sans-serif";
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 h1{
-    font-size: 70px;
-    margin-top: 20px;
+    font-size: 450%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
-
 h2{
-    font-size: 27px;
-    margin-left: 50px;
-    position: relative;
+margin-left: 20px; 
+font-family: 'Caveat Brush', cursive;
+font-size: 24px;
+
 }
 
 h3{
     margin: 20px;
-    font-size: 22px;
+    font-size: 27px;
     margin-top: 50px;
+    font-family: 'Caveat Brush', cursive;
+    
+}
+
+h4{
+    font-size: 100%;
 }
 
 p{
     font-size: 15px;
     margin: 20px 20px;
-    padding: 20px;
 }
 
 a{
     color: rgba(214, 70, 152, 0.925);
-    font-size: 13px;
+    font-size: 12px;
+    margin:0;
+    padding: 0;
 }
 a:hover{
     text-decoration: none;
     color: rgba(177, 7, 112, 0.925);
-    font-size: 15px;
+    font-size: 14px;
 }
-
 .titels{
-position: relative;
-font-size: 13px;
-margin-left: 31%;
+    margin:0;
+    padding: 0;
 }
 
 img{
     width: 100%;
     margin: 0px;
-}
-
-h4{
-    font-size: 100%;
 }
 
 ol{
@@ -59,113 +64,88 @@ width: 13px;
 padding-bottom: 4px;
 }
 
-.winkelkar {
+.winkelkar1 {
 margin: 0px 10px 0px 20px;
 padding: 10px;
 border-color: rgba(214, 70, 154, 0.418);
 width: 100px;
 }
 
-.winkelkar:hover{
-    background-color: rgba(214, 70, 154, 0.692);
+.winkelkar1:hover{
+    background-color: rgba(214, 70, 154, 0.418);
 }
 
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap*/
+.winkelkar2 {
+    margin: 0px 10px 0px 20px;
+    padding: 10px;
+    border-color: rgba(170, 76, 110, 0.4);
+    width: 100px;
+    }
+    
+.winkelkar2:hover{
+    background-color: rgba(170, 76, 110, 0.4);
+}
 
-/*// Small Small devices (phones, 450px and up)*/
-@media (min-width: 450px) { 
-    .titels{
-        position: relative;
-        font-size: 13px;
-        margin-left: 39%;
-        }
-
-        h1{
-            font-size: 75px;
-        }
-        
-        h2{
-            font-size: 32px;
-        }
-        
-        h3{
-            font-size: 27px;
-        }
-        
-        ol{
-            margin-left: 5%;
-        }
-
-        .muzieknoot{
-            width: 15px;
-            }
+.winkelkar3 {
+    margin: 0px 10px 0px 20px;
+    padding: 10px;
+    border-color: rgba(139, 22, 28, 0.50);
+    width: 100px;
+    }
+    
+    .winkelkar3:hover{
+        background-color: rgba(139, 22, 28, 0.50);
     }
 
-/*// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-    img{
-        width: 100%;
-        margin: 0px;
-    }  
+.thumbnail {
+    position: relative;
+}
 
-    .titels{
-        position: relative;
-        font-size: 13px;
-        margin-left: 35%;
-        }
-        h1{
-            font-size: 80px;
-        }
-        
-        h2{
-            font-size: 37px;
-        }
-        
-        h3{
-            font-size: 32px;
-        }
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+#grad {
+    background: rgba(90, 90, 90, 0.8); /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(rgba(252, 213, 220, 0.6), rgba(170, 76, 110, 0.4), rgba(139, 22, 28, 0.50)); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(rgba(252, 213, 220, 0.6), rgba(170, 76, 110, 0.4), rgba(139, 22, 28, 0.50)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(252, 213, 220, 0.6), rgba(170, 76, 110, 0.4)), rgba(139, 22, 28, 0.50)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(252, 213, 220, 0.6), rgba(124, 108, 114, 0.4), rgba(139, 22, 28, 0.50)); /* Standard syntax */
+}
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap*/
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
     body{
         background-color: rgba(188, 143, 143, 0.342);
     }
-    .titels{
-        position: relative;
-        font-size: 13px;
-        margin-left: 39%;
-        }
 
-    img{
-        float: left;
-    }
     ol{
-        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 70px;
     }
-    
- }
+    .winkelkar1{
+        margin-bottom: 0px;
+    }
+    h2{
+        font-size: 57px;
+    }
+    a{
+        font-size: 14px;
+    }
 
-/*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-    body{
-        background-color:rgba(0, 0, 255, 0.281);
-    }
-    .titels{
-        position: relative;
-        font-size: 13px;
-        margin-left: 45%;
+    .winkelkar1, .winkelkar2,.winkelkar3 {
+        border-color: rgba(139, 22, 28, 0.50);
+        margin:0px
+     }
+        
+        .winkelkar1:hover, .winkelkar2:hover{
+            background-color: rgba(139, 22, 28, 0.50);
         }
-    }
-/*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    body{
-        background-color:rgba(128, 0, 128, 0.281);
-    }
-
-    .titels{
-        position: relative;
-        font-size: 13px;
-        margin-left: 46%;
+        .container{
+            width: 70%
         }
 }
