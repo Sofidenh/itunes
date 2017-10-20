@@ -1,7 +1,45 @@
-h1{
-    font-size: 200px;
+body{
+    font-family: "Arial", "Helvetica", "sans-serif";
 }
 
+h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 27px;
+    margin-left: 50px;
+    position: relative;
+}
+
+h3{
+    margin: 20px;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+p{
+    font-size: 15px;
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+a{
+    color: rgba(214, 70, 152, 0.925);
+    font-size: 13px;
+}
+a:hover{
+    text-decoration: none;
+    color: rgba(177, 7, 112, 0.925);
+    font-size: 15px;
+}
+
+.titels{
+position: relative;
+font-size: 13px;
+margin-left: 31%;
+}
 
 img{
     width: 100%;
@@ -11,21 +49,123 @@ img{
 h4{
     font-size: 100%;
 }
-body{
-    margin: 20px;
+
+ol{
+margin: 20px 10px;
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) { ... }
+.muzieknoot{
+width: 13px;
+padding-bottom: 4px;
+}
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767px) { ... }
+.winkelkar {
+margin: 0px 10px 0px 20px;
+padding: 10px;
+border-color: rgba(214, 70, 154, 0.418);
+width: 100px;
+}
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991px) { ... }
+.winkelkar:hover{
+    background-color: rgba(214, 70, 154, 0.692);
+}
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199px) { ... }
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap*/
 
-// Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width
+/*// Small Small devices (phones, 450px and up)*/
+@media (min-width: 450px) { 
+    .titels{
+        position: relative;
+        font-size: 13px;
+        margin-left: 39%;
+        }
+
+        h1{
+            font-size: 75px;
+        }
+        
+        h2{
+            font-size: 32px;
+        }
+        
+        h3{
+            font-size: 27px;
+        }
+        
+        ol{
+            margin-left: 5%;
+        }
+
+        .muzieknoot{
+            width: 15px;
+            }
+    }
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    img{
+        width: 100%;
+        margin: 0px;
+    }  
+
+    .titels{
+        position: relative;
+        font-size: 13px;
+        margin-left: 35%;
+        }
+        h1{
+            font-size: 80px;
+        }
+        
+        h2{
+            font-size: 37px;
+        }
+        
+        h3{
+            font-size: 32px;
+        }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    body{
+        background-color: rgba(188, 143, 143, 0.342);
+    }
+    .titels{
+        position: relative;
+        font-size: 13px;
+        margin-left: 39%;
+        }
+
+    img{
+        float: left;
+    }
+    ol{
+        margin: 0px;
+    }
+    
+ }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    body{
+        background-color:rgba(0, 0, 255, 0.281);
+    }
+    .titels{
+        position: relative;
+        font-size: 13px;
+        margin-left: 45%;
+        }
+    }
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    body{
+        background-color:rgba(128, 0, 128, 0.281);
+    }
+
+    .titels{
+        position: relative;
+        font-size: 13px;
+        margin-left: 46%;
+        }
+}
