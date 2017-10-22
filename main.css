@@ -1,5 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: white;
     
 }
 
@@ -13,13 +14,12 @@ h1{
 h2{
 margin-left: 20px; 
 font-family: 'Caveat Brush', cursive;
-font-size: 24px;
-
+font-size: 20px;
 }
 
 h3{
     margin: 20px;
-    font-size: 27px;
+    font-size: 24px;
     margin-top: 50px;
     font-family: 'Caveat Brush', cursive;
     
@@ -27,27 +27,31 @@ h3{
 
 h4{
     font-size: 100%;
+    color: white;
+    font-size: 14px;
 }
 
 p{
     font-size: 15px;
     margin: 20px 20px;
+    color:rgba(255, 255, 255, 0.973);
 }
 
 a{
-    color: rgba(214, 70, 152, 0.925);
-    font-size: 12px;
+    color: white;
+    font-size: 11px;
     margin:0;
     padding: 0;
 }
 a:hover{
     text-decoration: none;
-    color: rgba(177, 7, 112, 0.925);
-    font-size: 14px;
+    font-size: 12px;
+    color: white;
 }
 .titels{
     margin:0;
     padding: 0;
+    box-shadow: 0 0px 0px;
 }
 
 img{
@@ -55,47 +59,69 @@ img{
     margin: 0px;
 }
 
+.list-group-item{
+    background-color: rgba(255, 255, 255, 0.13);
+    font-size: 13px;
+    border-left:0px;
+    border-right: 0px;
+    border-radius: 0px;
+    border-color: rgba(177, 7, 112, 0.3);
+}
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card-body{
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.card-img-top{
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
 ol{
 margin: 20px 10px;
 }
 
 .muzieknoot{
-width: 13px;
+width: 17px;
 padding-bottom: 4px;
+margin-right: 5px;
 }
 
 .winkelkar1 {
-margin: 0px 10px 0px 20px;
+margin: 0px 10px 0px 10px;
 padding: 10px;
-border-color: rgba(214, 70, 154, 0.418);
 width: 100px;
+box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 
-.winkelkar1:hover{
-    background-color: rgba(214, 70, 154, 0.418);
-}
+
 
 .winkelkar2 {
-    margin: 0px 10px 0px 20px;
+    margin: 0px 10px 0px 10px;
     padding: 10px;
-    border-color: rgba(170, 76, 110, 0.4);
     width: 100px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
     }
     
-.winkelkar2:hover{
-    background-color: rgba(170, 76, 110, 0.4);
-}
+
 
 .winkelkar3 {
-    margin: 0px 10px 0px 20px;
+    margin: 0px 10px 0px 10px;
     padding: 10px;
-    border-color: rgba(139, 22, 28, 0.50);
     width: 100px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
     }
     
-    .winkelkar3:hover{
-        background-color: rgba(139, 22, 28, 0.50);
-    }
+
 
 .thumbnail {
     position: relative;
@@ -107,22 +133,80 @@ width: 100px;
     left: 0;
     width: 100%;
 }
+
 #grad {
-    background: rgba(90, 90, 90, 0.8); /* For browsers that do not support gradients */
-   background: -webkit-linear-gradient(rgba(252, 213, 220, 0.6), rgba(170, 76, 110, 0.4), rgba(139, 22, 28, 0.50)); /* For Safari 5.1 to 6.0 */
-   background: -o-linear-gradient(rgba(252, 213, 220, 0.6), rgba(170, 76, 110, 0.4), rgba(139, 22, 28, 0.50)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(252, 213, 220, 0.6), rgba(170, 76, 110, 0.4)), rgba(139, 22, 28, 0.50)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(252, 213, 220, 0.6), rgba(124, 108, 114, 0.4), rgba(139, 22, 28, 0.50)); /* Standard syntax */
+    background: rgb(255, 255, 255); /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(rgb(250, 199, 209), rgba(163, 59, 97, 0.527), rgba(145, 18, 26, 0.63)); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(rgb(250, 199, 209), rgba(163, 59, 97, 0.527), rgba(145, 18, 26, 0.63)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(250, 199, 209), rgba(163, 59, 97, 0.527), rgba(145, 18, 26, 0.63)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(250, 199, 209), rgba(163, 59, 97, 0.527), rgba(145, 18, 26, 0.63)); /* Standard syntax */
 }
+
+.list-group{
+    margin: 0px;
+}
+
+.mx-auto{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: rgba(177, 7, 112, 0.6);
+    border-color: rgba(177, 7, 112, 0.6);
+    font-size: 14px;
+}
+.mx-auto:hover{
+    background-color: white;
+    color: rgba(177, 7, 112, 0.6);
+    border-color: rgba(177, 7, 112, 0.6);
+}
+
+footer{
+    width: 100%;
+}
+
+.footertekst{
+    font-size: 12px;
+    margin: 5px;
+}
+hr{
+    margin-top: 150px;
+}
+
 /* // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap*/
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-    body{
-        background-color: rgba(188, 143, 143, 0.342);
-    }
+   
 
+    a{
+        font-size: 14px;
+    }
+    a:hover{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    
+    .winkelkar1, .winkelkar2,.winkelkar3 {
+        margin-left: 10px;
+     }
+        
+        .winkelkar1:hover, .winkelkar2:hover, .winkelkar3:hover{
+            width: 100%;
+            transition: 0.5s;
+            margin-bottom: 20px;
+        }
+        h2{
+            margin-left: 20px; 
+            font-family: 'Caveat Brush', cursive;
+            font-size: 38px;
+            }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
     ol{
         margin-top: 20px;
         margin-bottom: 70px;
@@ -130,22 +214,15 @@ width: 100px;
     .winkelkar1{
         margin-bottom: 0px;
     }
-    h2{
-        font-size: 57px;
+    h3{
+        font-size: 23px;
     }
     a{
         font-size: 14px;
     }
 
-    .winkelkar1, .winkelkar2,.winkelkar3 {
-        border-color: rgba(139, 22, 28, 0.50);
-        margin:0px
-     }
-        
-        .winkelkar1:hover, .winkelkar2:hover{
-            background-color: rgba(139, 22, 28, 0.50);
-        }
         .container{
-            width: 70%
+            width: 70%;
+            background-color: white;
         }
-}
+ }
